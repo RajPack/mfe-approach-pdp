@@ -1,0 +1,19 @@
+<div class="pdp__container" #pdp>
+  <div class="pdp__content">
+    <h1>PDP content</h1>
+    <div class="pdp__state">
+      <h4>State transfered from shell:</h4>
+      {{ state | json }}
+
+      <button (click)="sendTime()">Send current time</button>
+    </div>
+  </div>
+  <div class="pdp__nav-links">
+    <a [routerLink]="['./', 'page1']" routerLinkActive="active">Page 1</a>
+    <a routerLink="page2" routerLinkActive="active">Page 2</a>
+    <a routerLink="page3" routerLinkActive="active">Page 3</a>
+  </div>
+  <div class="pdp__detail-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

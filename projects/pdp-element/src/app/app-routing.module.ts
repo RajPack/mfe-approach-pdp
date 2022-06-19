@@ -6,7 +6,7 @@ export const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./pdp/pdp.module').then(({ PdpModule }) => PdpModule),
+      import('../../../../src/app/pdp/pdp.module').then(({ PdpModule }) => PdpModule),
     resolve: {
       state: MfeStateResolverService,
     },

@@ -1,0 +1,22 @@
+.pdp__container {
+    background-color: rgb(236, 241, 165);
+    padding: 20px;
+}
+.pdp__nav-links{
+    display: flex;
+    gap: 40px;
+    background-color: #e6eb99;
+    padding: 15px;
+    a {
+        padding: 5px;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+    a.active {
+        background: darkblue;
+        color: white;
+    }
+}
+.pdp__state {
+    margin-bottom: 20px;
+}
