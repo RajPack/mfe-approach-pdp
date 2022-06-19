@@ -6,7 +6,7 @@ const files = fs
   .readdirSync(directoryPath)
   .filter((name) => name.endsWith(".js"));
 
-console.log(files);
+console.log('bundling files: ', files.join(', '));
 
 const output = files
   .map((f) => {
